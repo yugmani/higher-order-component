@@ -5,7 +5,7 @@ import HoverCounter from './components/HoverCounter';
 
 export default function App() {
   return (
-    <div>
+    <div className="App">
       <h1>Higher Order Component!</h1>
       <ClickCounter name="Yoog" />
       {/* props name is passed to HOC but not to wrapped components */}
