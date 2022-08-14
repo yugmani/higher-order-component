@@ -19,6 +19,8 @@ const withCounter = (WrappedComponent) => {
         <WrappedComponent
           count={this.state.count}
           incrementCount={this.incrementCount}
+          {...this.props}
+          // {/* props name is passed to HOC but not to wrapped components. So it also needs to be passed down from HoC to wrapped components as props */}
         />
       );
     }
